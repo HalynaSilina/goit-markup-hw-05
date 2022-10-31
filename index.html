@@ -60,7 +60,7 @@
 						<br />
 						вашого бізнесу
 					</h1>
-					<button type="button" class="order-button">Замовити послугу</button>
+					<button type="button" class="order-button" data-modal-open>Замовити послугу</button>
 				</div>
 					</section>
 		<!-- Features -->
@@ -114,12 +114,15 @@
 				<ul class="work-list list">
 					<li class="item">
 						<img src="./images/creation.jpg" alt="Створюємо сайт" width="370" height="294" />
+						<p class="work-text">Десктопні додатки</p>
 					</li>
 					<li class="item">
 						<img src="./images/adaptation.jpg" alt="Адаптація під мобільні пристрої" width="370" height="294" />
+					<p class="work-text">Мобільні додатки</p>
 					</li>
 					<li class="item">
 						<img src="./images/design.jpg" alt="Розробляємо унікальний дизайн" width="370" height="294" />
+					<p class="work-text">Дизайнерські рішення</p>
 					</li>
 				</ul>
 			</div>
@@ -410,6 +413,12 @@
 			</div>
 		</div>
 	</footer>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+<button type="button" class="close-button" data-modal-close>&#10006</button>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
