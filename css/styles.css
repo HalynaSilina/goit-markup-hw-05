@@ -31,6 +31,12 @@
   --backdrop-bg-color: rgba(0, 0, 0, 0.2);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+html {
+  box-sizing: border-box;
+}
+*::before, ::after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
 
@@ -363,7 +369,7 @@ svg {
 
   border-radius: 50%;
   color: var(--primary-text-color);
-  transition: color, background-color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 .team-link:hover,
 .team-link:focus {
@@ -395,7 +401,7 @@ svg {
   border: 1px solid var(--clients-box-border);
   border-radius: 4px;
 
-  transition: color, background-color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -527,8 +533,8 @@ svg {
 }
 .close-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
 
   width: 30px;
   height: 30px;
@@ -539,9 +545,15 @@ svg {
   border-radius: 50%;
   cursor: pointer;
 }
+.modal-close {
+  width: 18px;
+  height: 18px;
+
+  fill: currentColor;
+}
 /* portfolio */
 .portfolio-button {
-  padding: 6px 22px;
+  padding: 6px;
   min-width: 73px;
 
   font-family: "Roboto";
@@ -558,7 +570,7 @@ svg {
   border-radius: 4px;
   border: none;
 
-  transition: color, background-color, box-shadow 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .portfolio-button:hover,
 .portfolio-button:focus,
@@ -588,8 +600,7 @@ svg {
 
   transition: box-shadow 250ms var(--timing-function);
 }
-.project-card:hover,
-.project-card:focus {
+.project-card:hover {
   box-shadow: var(--projects-hover-shadow);
 }
 .project-thumb {
@@ -614,8 +625,8 @@ svg {
  
   transition: transform 250ms var(--timing-function);
 }
-.project-card:hover .project-description,
-.project-card:focus .project-description {
+.project-link:hover .project-description,
+.project-link:focus .project-description {
   transform: translateY(0%);
   opacity: 1;
   }
@@ -636,4 +647,4 @@ svg {
 .project-text {
   font-size: 16px;
   line-height: 1.87;
-  }
+}

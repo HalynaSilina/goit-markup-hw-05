@@ -54,15 +54,15 @@
 	<main>
 		<!-- Hero -->
 		<section class="hero-overlay">
-							<div class="container">
-					<h1 class="hero-title">
-						Ефективні рішення для
-						<br />
-						вашого бізнесу
-					</h1>
-					<button type="button" class="order-button" data-modal-open>Замовити послугу</button>
-				</div>
-					</section>
+			<div class="container">
+				<h1 class="hero-title">
+					Ефективні рішення для
+					<br />
+					вашого бізнесу
+				</h1>
+				<button type="button" class="order-button" data-modal-open>Замовити послугу</button>
+			</div>
+		</section>
 		<!-- Features -->
 		<section class="section no-padding">
 			<div class="container">
@@ -118,11 +118,11 @@
 					</li>
 					<li class="item">
 						<img src="./images/adaptation.jpg" alt="Адаптація під мобільні пристрої" width="370" height="294" />
-					<p class="work-text">Мобільні додатки</p>
+						<p class="work-text">Мобільні додатки</p>
 					</li>
 					<li class="item">
 						<img src="./images/design.jpg" alt="Розробляємо унікальний дизайн" width="370" height="294" />
-					<p class="work-text">Дизайнерські рішення</p>
+						<p class="work-text">Дизайнерські рішення</p>
 					</li>
 				</ul>
 			</div>
@@ -415,7 +415,10 @@
 	</footer>
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
-<button type="button" class="close-button" data-modal-close>&#9747;</button>
+			<button type="button" class="close-button" data-modal-close>
+				<svg class="modal-close">
+					<use href="./images/icons.svg#icon-modal-close"></use>
+				</svg></button>
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
