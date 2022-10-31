@@ -51,6 +51,7 @@ body {
 .link {
   text-decoration: none;
   font-style: normal;
+  color: currentColor;
 }
 h1,
 h2,
@@ -606,7 +607,7 @@ svg {
 
   font-size: 18px;
   line-height: 1.55;
-  color: var(projects-thumb-text);
+  color: var(--projects-thumb-text);
   background-color: var(--projects-thumb-bg);
 
   transition: transform 250ms var(--timing-function);
@@ -632,4 +633,4 @@ svg {
 .project-text {
   font-size: 16px;
   line-height: 1.87;
-}
+  }
