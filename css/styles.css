@@ -505,12 +505,14 @@ svg {
   height: 100%;
 
   background-color: var(--backdrop-bg-color);
+  opacity: 1;
+
   transition: opacity 250ms var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .backdrop.is-hidden .modal {
   position: absolute;
@@ -520,15 +522,15 @@ svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  overflow: hidden;
-
+  
   min-width: 528px;
   min-height: 581px;
-
+  
   background-color: var(--primary-white-color);
   box-shadow: var(--modal-window-shadow);
   border-radius: 4px;
+  
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
 }
 .close-button {
